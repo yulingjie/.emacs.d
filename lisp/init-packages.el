@@ -1,0 +1,91 @@
+;;  __        __             __   ___
+;; |__)  /\  /  ` |__/  /\  / _` |__
+;; |    /~~\ \__, |  \ /~~\ \__> |___
+;;                      __   ___        ___      ___
+;; |\/|  /\  |\ |  /\  / _` |__   |\/| |__  |\ |  |
+;; |  | /~~\ | \| /~~\ \__> |___  |  | |___ | \|  |
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+			   ("melpa" . "http://elpa.emacs-china.org/melpa/"))))
+
+;; cl - Common Lisp Extension
+(require 'cl)
+
+;; Add Packages
+(defvar my/packages '(
+		      ;; --- Auto-completion ---
+		      company
+		      ;; --- Better Editor ---
+		      smooth-scrolling
+		      hungry-delete
+		      swiper
+		      counsel
+		      smartparens
+		      popwin
+		      recentf
+		      ;;smex
+		      ;; --- Major Mode ---
+		      ;;js2-mode
+		     ;; markdown-mode
+		      ;; ...
+		      )
+  )
+
+(setq package-selected-packages my/packages)
+
+ (defun my/packages-installed-p ()
+     (loop for pkg in my/packages
+           when (not (package-installed-p pkg)) do (return nil)
+           finally (return t)))
+
+ (unless (my/packages-installed-p)
+     (message "%s" "Refreshing package database...")
+     (package-refresh-contents)
+     (dolist (pkg my/packages)
+       (when (not (package-installed-p pkg))
+         (package-install pkg))))
+
+(require 'hungry-delete)
+(global-hungry-delete-mode)
+
+(require 'smartparens-config)
+(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
+;; smex initialize
+;;(require 'smex)
+;;(smex-initialize)
+;;(global-set-key (kbd "M-x") 'smex)
+;;(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; this is your old M-x
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+;; config for ivh and swiper
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+(setq enable-recursive-minibuffers t)
+(global-set-key "\C-s" 'swiper)
+(global-set-key (kbd "C-c C-r") 'ivy-resume)
+(global-set-key (kbd "<f6>") 'ivy-resume)
+(global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "C-h f") 'counsel-describe-function)
+(global-set-key (kbd "C-h v") 'counsel-describe-variable)
+(global-set-key (kbd "C-h l") 'counsel-find-library)
+(global-set-key (kbd "C-h i") 'counsel-info-lookup-symbol)
+(global-set-key (kbd "C-h u") 'counsel-unicode-char)
+(global-set-key (kbd "C-c g") 'counsel-git)
+(global-set-key (kbd "C-c j") 'counsel-git-grep)
+(global-set-key (kbd "C-c k") 'counsel-ag)
+(global-set-key (kbd "C-x l") 'counsel-locate)
+(global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
+(define-key read-expression-map (kbd "C-r") 'counsel-expression-history)
+
+;; config for org mode
+(require 'org)
+(setq org-agenda-files '("~/org"))
+(global-set-key (kbd "C-c a") 'org-agenda)
+
+  ;; 文件末尾
+  (provide 'init-packages)
+
