@@ -32,7 +32,7 @@
 		      ;; ...
 		      )
   )
-
+(global-company-mode 1)
 (setq package-selected-packages my/packages)
 
  (defun my/packages-installed-p ()
@@ -86,6 +86,11 @@
 (setq org-agenda-files '("~/org"))
 (global-set-key (kbd "C-c a") 'org-agenda)
 
-  ;; 文件末尾
-  (provide 'init-packages)
+;; config for popwin
+(require 'popwin)
+(popwin-mode t)
+
+(load-theme 'monokai 1)
+;; 文件末尾
+(provide 'init-packages)
 

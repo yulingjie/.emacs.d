@@ -12,12 +12,12 @@
 
 (global-linum-mode 1)
 
-(global-company-mode 1)
+
 
 (setq make-backup-files nil)
 
 ;;(add-to-list my/packages 'monokai-theme)
-(load-theme 'monokai 1)
+
 
 
 ;; set cursor
