@@ -25,6 +25,7 @@
 		      smartparens
 		      popwin
 		      recentf
+		      monokai-theme
 		      ;;smex
 		      ;; --- Major Mode ---
 		      ;;js2-mode
@@ -51,46 +52,22 @@
 (global-hungry-delete-mode)
 
 (require 'smartparens-config)
-(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
+;;(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
 ;; smex initialize
 ;;(require 'smex)
 ;;(smex-initialize)
 ;;(global-set-key (kbd "M-x") 'smex)
 ;;(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; this is your old M-x
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
-;; config for ivh and swiper
-(ivy-mode 1)
-(setq ivy-use-virtual-buffers t)
-(setq enable-recursive-minibuffers t)
-(global-set-key "\C-s" 'swiper)
-(global-set-key (kbd "C-c C-r") 'ivy-resume)
-(global-set-key (kbd "<f6>") 'ivy-resume)
-(global-set-key (kbd "M-x") 'counsel-M-x)
-(global-set-key (kbd "C-x C-f") 'counsel-find-file)
-(global-set-key (kbd "C-h f") 'counsel-describe-function)
-(global-set-key (kbd "C-h v") 'counsel-describe-variable)
-(global-set-key (kbd "C-h l") 'counsel-find-library)
-(global-set-key (kbd "C-h i") 'counsel-info-lookup-symbol)
-(global-set-key (kbd "C-h u") 'counsel-unicode-char)
-(global-set-key (kbd "C-c g") 'counsel-git)
-(global-set-key (kbd "C-c j") 'counsel-git-grep)
-(global-set-key (kbd "C-c k") 'counsel-ag)
-(global-set-key (kbd "C-x l") 'counsel-locate)
-(global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
-(define-key read-expression-map (kbd "C-r") 'counsel-expression-history)
 
-;; config for org mode
-(require 'org)
-(setq org-agenda-files '("~/org"))
-(global-set-key (kbd "C-c a") 'org-agenda)
 
 ;; config for popwin
 (require 'popwin)
-(popwin-mode t)
+
 
 (load-theme 'monokai 1)
+
+(require 'recentf)
 ;; 文件末尾
 (provide 'init-packages)
 
