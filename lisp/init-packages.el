@@ -33,8 +33,7 @@
 		      ;; ...
 		      )
   )
-(global-company-mode 1)
-(setq package-selected-packages my/packages)
+
 
  (defun my/packages-installed-p ()
      (loop for pkg in my/packages
@@ -47,7 +46,8 @@
      (dolist (pkg my/packages)
        (when (not (package-installed-p pkg))
          (package-install pkg))))
-
+(global-company-mode 1)
+(setq package-selected-packages my/packages)
 (require 'hungry-delete)
 (global-hungry-delete-mode)
 

@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "smooth-scrolling" "smooth-scrolling.el" (0
-;;;;;;  0 0 0))
-;;; Generated autoloads from smooth-scrolling.el
+;;;### (autoloads nil "smooth-scrolling" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smooth-scrolling-20161002.1249/smooth-scrolling.el"
+;;;;;;  "c73c12379eefe6e2546d47db9ae3a50f")
+;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smooth-scrolling-20161002.1249/smooth-scrolling.el
 
 (defvar smooth-scrolling-mode nil "\
 Non-nil if Smooth-Scrolling mode is enabled.
@@ -74,7 +74,11 @@ Note that the advice will not have an effect unless
 
 \(fn FUNC)" nil t)
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "smooth-scrolling" '("do-smooth-scroll" "disable-smooth-scroll-for-function" "enable-smooth-scroll-for-function-conditionally" "window-is-at-bob-p" "smooth-scroll-")))
+;;;***
+
+;;;### (autoloads nil nil ("c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smooth-scrolling-20161002.1249/smooth-scrolling-autoloads.el"
+;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smooth-scrolling-20161002.1249/smooth-scrolling.el")
+;;;;;;  (22765 62831 0 0))
 
 ;;;***
 
