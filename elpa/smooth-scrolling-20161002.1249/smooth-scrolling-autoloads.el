@@ -1,16 +1,17 @@
 ;;; smooth-scrolling-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "smooth-scrolling" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smooth-scrolling-20161002.1249/smooth-scrolling.el"
+;;;### (autoloads (enable-smooth-scroll-for-function smooth-scroll-strict-margins
+;;;;;;  smooth-scroll-margin smooth-scrolling-mode) "smooth-scrolling"
+;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smooth-scrolling-20161002.1249/smooth-scrolling.el"
 ;;;;;;  "c73c12379eefe6e2546d47db9ae3a50f")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smooth-scrolling-20161002.1249/smooth-scrolling.el
 
 (defvar smooth-scrolling-mode nil "\
 Non-nil if Smooth-Scrolling mode is enabled.
-See the `smooth-scrolling-mode' command
-for a description of this minor mode.
+See the command `smooth-scrolling-mode' for a description of this minor mode.
 Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `smooth-scrolling-mode'.")
@@ -76,15 +77,17 @@ Note that the advice will not have an effect unless
 
 ;;;***
 
-;;;### (autoloads nil nil ("c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smooth-scrolling-20161002.1249/smooth-scrolling-autoloads.el"
+;;;### (autoloads nil nil ("c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smooth-scrolling-20161002.1249/smooth-scrolling-pkg.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smooth-scrolling-20161002.1249/smooth-scrolling.el")
-;;;;;;  (22765 62831 0 0))
+;;;;;;  (22767 15680 172000 0))
 
 ;;;***
 
+(provide 'smooth-scrolling-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; smooth-scrolling-autoloads.el ends here

@@ -1,9 +1,12 @@
 ;;; popwin-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "popwin" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/popwin-20150315.600/popwin.el"
+;;;### (autoloads (popwin:messages popwin:find-file-tail popwin:find-file
+;;;;;;  popwin:popup-buffer-tail popwin:one-window popwin:universal-display
+;;;;;;  popwin:pop-to-buffer popwin:display-buffer popwin:popup-buffer)
+;;;;;;  "popwin" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/popwin-20150315.600/popwin.el"
 ;;;;;;  "721fa0d68c9305afff89261e16189782")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/popwin-20150315.600/popwin.el
 
@@ -69,15 +72,17 @@ Display *Messages* buffer in a popup window.
 
 ;;;***
 
-;;;### (autoloads nil nil ("c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/popwin-20150315.600/popwin-autoloads.el"
+;;;### (autoloads nil nil ("c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/popwin-20150315.600/popwin-pkg.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/popwin-20150315.600/popwin.el")
-;;;;;;  (22765 62842 0 0))
+;;;;;;  (22767 15686 971000 0))
 
 ;;;***
 
+(provide 'popwin-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; popwin-autoloads.el ends here

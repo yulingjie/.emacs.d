@@ -1,9 +1,22 @@
 ;;; counsel-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "counsel" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/counsel-20170410.24/counsel.el"
+;;;### (autoloads (counsel-mode counsel-irony counsel-org-agenda-headlines
+;;;;;;  counsel-colors-web counsel-colors-emacs counsel-company counsel-linux-app
+;;;;;;  counsel-rhythmbox counsel-shell-history counsel-esh-history
+;;;;;;  counsel-shell-command-history counsel-expression-history
+;;;;;;  counsel-list-processes counsel-imenu counsel-yank-pop counsel-tmm
+;;;;;;  counsel-org-tag-agenda counsel-org-tag counsel-grep-or-swiper
+;;;;;;  counsel-grep counsel-rg counsel-pt counsel-ag counsel-dired-jump
+;;;;;;  counsel-file-jump counsel-rpm counsel-dpkg counsel-locate
+;;;;;;  counsel-recentf counsel-find-file counsel-git-log counsel-git-stash
+;;;;;;  counsel-git-grep counsel-git counsel-descbinds counsel-load-theme
+;;;;;;  counsel-find-library counsel-load-library counsel-M-x counsel-bookmark
+;;;;;;  counsel-info-lookup-symbol counsel-set-variable counsel-describe-function
+;;;;;;  counsel-describe-variable counsel-unicode-char counsel-clj
+;;;;;;  counsel-cl counsel-el) "counsel" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/counsel-20170410.24/counsel.el"
 ;;;;;;  "b32560e32188e1c556ccc2e848891a84")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/counsel-20170410.24/counsel.el
 
@@ -287,8 +300,7 @@ Inline C/C++ completion using Irony.
 
 (defvar counsel-mode nil "\
 Non-nil if Counsel mode is enabled.
-See the `counsel-mode' command
-for a description of this minor mode.
+See the command `counsel-mode' for a description of this minor mode.
 Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `counsel-mode'.")
@@ -305,15 +317,17 @@ replacements.
 
 ;;;***
 
-;;;### (autoloads nil nil ("c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/counsel-20170410.24/counsel-autoloads.el"
+;;;### (autoloads nil nil ("c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/counsel-20170410.24/counsel-pkg.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/counsel-20170410.24/counsel.el")
-;;;;;;  (22765 62836 0 0))
+;;;;;;  (22767 15683 900000 0))
 
 ;;;***
 
+(provide 'counsel-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; counsel-autoloads.el ends here

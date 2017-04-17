@@ -1,9 +1,10 @@
 ;;; company-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "company" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company.el"
+;;;### (autoloads (company-complete company-manual-begin global-company-mode
+;;;;;;  company-mode) "company" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company.el"
 ;;;;;;  "951931e882c8728dd8f131664d35f047")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company.el
 
@@ -38,9 +39,8 @@ keymap during active completions (`company-active-map'):
 \(fn &optional ARG)" t nil)
 
 (defvar global-company-mode nil "\
-Non-nil if Global Company mode is enabled.
-See the `global-company-mode' command
-for a description of this minor mode.
+Non-nil if Global-Company mode is enabled.
+See the command `global-company-mode' for a description of this minor mode.
 Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `global-company-mode'.")
@@ -49,7 +49,7 @@ or call the function `global-company-mode'.")
 
 (autoload 'global-company-mode "company" "\
 Toggle Company mode in all buffers.
-With prefix ARG, enable Global Company mode if ARG is positive;
+With prefix ARG, enable Global-Company mode if ARG is positive;
 otherwise, disable it.  If called from Lisp, enable the mode if
 ARG is omitted or nil.
 
@@ -74,7 +74,7 @@ inserted.
 
 ;;;***
 
-;;;### (autoloads nil "company-abbrev" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-abbrev.el"
+;;;### (autoloads (company-abbrev) "company-abbrev" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-abbrev.el"
 ;;;;;;  "5c53bd58b979c8d570d3e6f0f4e35579")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-abbrev.el
 
@@ -85,7 +85,7 @@ inserted.
 
 ;;;***
 
-;;;### (autoloads nil "company-bbdb" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-bbdb.el"
+;;;### (autoloads (company-bbdb) "company-bbdb" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-bbdb.el"
 ;;;;;;  "fec5aa48cc472cfddf2eeb9c66ecbd7a")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-bbdb.el
 
@@ -96,7 +96,7 @@ inserted.
 
 ;;;***
 
-;;;### (autoloads nil "company-css" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-css.el"
+;;;### (autoloads (company-css) "company-css" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-css.el"
 ;;;;;;  "537159cbe157b676671148a1e62c2c5c")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-css.el
 
@@ -107,7 +107,7 @@ inserted.
 
 ;;;***
 
-;;;### (autoloads nil "company-dabbrev" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-dabbrev.el"
+;;;### (autoloads (company-dabbrev) "company-dabbrev" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-dabbrev.el"
 ;;;;;;  "b47d55e8fbd9186e33fc6fa1e01685a4")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-dabbrev.el
 
@@ -118,7 +118,7 @@ dabbrev-like `company-mode' completion backend.
 
 ;;;***
 
-;;;### (autoloads nil "company-dabbrev-code" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-dabbrev-code.el"
+;;;### (autoloads (company-dabbrev-code) "company-dabbrev-code" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-dabbrev-code.el"
 ;;;;;;  "48580f10fbb5c8b3aadae36f968ae8f5")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-dabbrev-code.el
 
@@ -131,7 +131,7 @@ comments or strings.
 
 ;;;***
 
-;;;### (autoloads nil "company-elisp" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-elisp.el"
+;;;### (autoloads (company-elisp) "company-elisp" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-elisp.el"
 ;;;;;;  "05e3f346f5e034870305b85ebbe307d1")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-elisp.el
 
@@ -142,7 +142,7 @@ comments or strings.
 
 ;;;***
 
-;;;### (autoloads nil "company-etags" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-etags.el"
+;;;### (autoloads (company-etags) "company-etags" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-etags.el"
 ;;;;;;  "82c04049b6e597f924404e05590b7156")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-etags.el
 
@@ -153,7 +153,7 @@ comments or strings.
 
 ;;;***
 
-;;;### (autoloads nil "company-files" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-files.el"
+;;;### (autoloads (company-files) "company-files" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-files.el"
 ;;;;;;  "3bdffca5c580b282a3daebe0c1753c75")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-files.el
 
@@ -166,7 +166,7 @@ File paths with spaces are only supported inside strings.
 
 ;;;***
 
-;;;### (autoloads nil "company-gtags" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-gtags.el"
+;;;### (autoloads (company-gtags) "company-gtags" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-gtags.el"
 ;;;;;;  "cf0fb8d3371d0d127d07578233d8ee6f")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-gtags.el
 
@@ -177,7 +177,7 @@ File paths with spaces are only supported inside strings.
 
 ;;;***
 
-;;;### (autoloads nil "company-ispell" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-ispell.el"
+;;;### (autoloads (company-ispell) "company-ispell" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-ispell.el"
 ;;;;;;  "f44bf84e35b80953b17c66cb18ce4a75")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-ispell.el
 
@@ -188,7 +188,7 @@ File paths with spaces are only supported inside strings.
 
 ;;;***
 
-;;;### (autoloads nil "company-keywords" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-keywords.el"
+;;;### (autoloads (company-keywords) "company-keywords" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-keywords.el"
 ;;;;;;  "6191f1803d93c5ad177aa48ccb5a07a7")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-keywords.el
 
@@ -199,7 +199,7 @@ File paths with spaces are only supported inside strings.
 
 ;;;***
 
-;;;### (autoloads nil "company-nxml" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-nxml.el"
+;;;### (autoloads (company-nxml) "company-nxml" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-nxml.el"
 ;;;;;;  "37e45d49c64cec5c12ba830a380910b2")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-nxml.el
 
@@ -210,7 +210,7 @@ File paths with spaces are only supported inside strings.
 
 ;;;***
 
-;;;### (autoloads nil "company-oddmuse" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-oddmuse.el"
+;;;### (autoloads (company-oddmuse) "company-oddmuse" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-oddmuse.el"
 ;;;;;;  "4d585ed74b0f1654770bb4486c5554da")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-oddmuse.el
 
@@ -221,7 +221,7 @@ File paths with spaces are only supported inside strings.
 
 ;;;***
 
-;;;### (autoloads nil "company-semantic" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-semantic.el"
+;;;### (autoloads (company-semantic) "company-semantic" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-semantic.el"
 ;;;;;;  "2dd2479158efd8b008d9fd5488e31fe4")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-semantic.el
 
@@ -232,7 +232,7 @@ File paths with spaces are only supported inside strings.
 
 ;;;***
 
-;;;### (autoloads nil "company-tempo" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-tempo.el"
+;;;### (autoloads (company-tempo) "company-tempo" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-tempo.el"
 ;;;;;;  "ef7bf243940ad89d1f44ecffcfa3949c")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-tempo.el
 
@@ -243,7 +243,7 @@ File paths with spaces are only supported inside strings.
 
 ;;;***
 
-;;;### (autoloads nil "company-xcode" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-xcode.el"
+;;;### (autoloads (company-xcode) "company-xcode" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-xcode.el"
 ;;;;;;  "0106fec3041ec311c0850ad16a5d099a")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-xcode.el
 
@@ -254,7 +254,7 @@ File paths with spaces are only supported inside strings.
 
 ;;;***
 
-;;;### (autoloads nil "company-yasnippet" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-yasnippet.el"
+;;;### (autoloads (company-yasnippet) "company-yasnippet" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-yasnippet.el"
 ;;;;;;  "b0537a76e047045c033f5f1756cc97d0")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-yasnippet.el
 
@@ -286,7 +286,6 @@ shadow backends that come after it.  Recommended usages:
 ;;;***
 
 ;;;### (autoloads nil nil ("c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-abbrev.el"
-;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-autoloads.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-bbdb.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-capf.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-clang.el"
@@ -310,13 +309,15 @@ shadow backends that come after it.  Recommended usages:
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-xcode.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company-yasnippet.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/company-20170328.1748/company.el")
-;;;;;;  (22765 62827 0 0))
+;;;;;;  (22767 15677 821000 0))
 
 ;;;***
 
+(provide 'company-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; company-autoloads.el ends here

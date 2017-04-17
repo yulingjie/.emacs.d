@@ -1,9 +1,14 @@
 ;;; smartparens-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "smartparens" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smartparens-20170401.315/smartparens.el"
+;;;### (autoloads (turn-off-show-smartparens-mode turn-on-show-smartparens-mode
+;;;;;;  show-smartparens-global-mode show-smartparens-mode turn-off-smartparens-mode
+;;;;;;  turn-on-smartparens-mode smartparens-global-mode turn-on-smartparens-strict-mode
+;;;;;;  smartparens-global-strict-mode smartparens-strict-mode smartparens-mode
+;;;;;;  sp-use-smartparens-bindings sp-use-paredit-bindings sp-cheat-sheet)
+;;;;;;  "smartparens" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smartparens-20170401.315/smartparens.el"
 ;;;;;;  "cad309af85e66bf4db1c6a7e8e735899")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smartparens-20170401.315/smartparens.el
 
@@ -67,8 +72,7 @@ after the smartparens indicator in the mode list.
 
 (defvar smartparens-global-strict-mode nil "\
 Non-nil if Smartparens-Global-Strict mode is enabled.
-See the `smartparens-global-strict-mode' command
-for a description of this minor mode.
+See the command `smartparens-global-strict-mode' for a description of this minor mode.
 Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `smartparens-global-strict-mode'.")
@@ -94,8 +98,7 @@ Turn on `smartparens-strict-mode'.
 
 (defvar smartparens-global-mode nil "\
 Non-nil if Smartparens-Global mode is enabled.
-See the `smartparens-global-mode' command
-for a description of this minor mode.
+See the command `smartparens-global-mode' for a description of this minor mode.
 Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `smartparens-global-mode'.")
@@ -146,8 +149,7 @@ support custom pairs.
 
 (defvar show-smartparens-global-mode nil "\
 Non-nil if Show-Smartparens-Global mode is enabled.
-See the `show-smartparens-global-mode' command
-for a description of this minor mode.
+See the command `show-smartparens-global-mode' for a description of this minor mode.
 Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `show-smartparens-global-mode'.")
@@ -178,8 +180,7 @@ Turn off `show-smartparens-mode'.
 
 ;;;***
 
-;;;### (autoloads nil nil ("c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smartparens-20170401.315/smartparens-autoloads.el"
-;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smartparens-20170401.315/smartparens-clojure.el"
+;;;### (autoloads nil nil ("c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smartparens-20170401.315/smartparens-clojure.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smartparens-20170401.315/smartparens-config.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smartparens-20170401.315/smartparens-elixir.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smartparens-20170401.315/smartparens-ess.el"
@@ -195,13 +196,15 @@ Turn off `show-smartparens-mode'.
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smartparens-20170401.315/smartparens-rust.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smartparens-20170401.315/smartparens-scala.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/smartparens-20170401.315/smartparens.el")
-;;;;;;  (22765 62839 0 0))
+;;;;;;  (22767 15685 940000 0))
 
 ;;;***
 
+(provide 'smartparens-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; smartparens-autoloads.el ends here

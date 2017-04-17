@@ -64,7 +64,7 @@
 ;; config for popwin
 (require 'popwin)
 
-
+(require 'dired-x)
 (load-theme 'monokai 1)
 
 (require 'recentf)

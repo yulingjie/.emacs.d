@@ -1,9 +1,9 @@
 ;;; swiper-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "swiper" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/swiper-20170410.24/swiper.el"
+;;;### (autoloads (swiper swiper-avy) "swiper" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/swiper-20170410.24/swiper.el"
 ;;;;;;  "52629b30d18859557e5eab9eeec72cac")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/swiper-20170410.24/swiper.el
 
@@ -20,15 +20,17 @@ When non-nil, INITIAL-INPUT is the initial search pattern.
 
 ;;;***
 
-;;;### (autoloads nil nil ("c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/swiper-20170410.24/swiper-autoloads.el"
+;;;### (autoloads nil nil ("c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/swiper-20170410.24/swiper-pkg.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/swiper-20170410.24/swiper.el")
-;;;;;;  (22765 62835 0 0))
+;;;;;;  (22767 15683 116000 0))
 
 ;;;***
 
+(provide 'swiper-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; swiper-autoloads.el ends here

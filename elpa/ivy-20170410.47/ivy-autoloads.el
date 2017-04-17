@@ -1,9 +1,10 @@
 ;;; ivy-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+
 
-;;;### (autoloads nil "ivy" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/ivy-20170410.47/ivy.el"
+;;;### (autoloads (ivy-switch-buffer-other-window ivy-switch-buffer
+;;;;;;  ivy-mode ivy-completing-read ivy-read ivy-resume) "ivy" "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/ivy-20170410.47/ivy.el"
 ;;;;;;  "2978119e35c88de62231f7a830c1fedf")
 ;;; Generated autoloads from c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/ivy-20170410.47/ivy.el
 
@@ -82,8 +83,7 @@ INHERIT-INPUT-METHOD is currently ignored.
 
 (defvar ivy-mode nil "\
 Non-nil if Ivy mode is enabled.
-See the `ivy-mode' command
-for a description of this minor mode.
+See the command `ivy-mode' for a description of this minor mode.
 Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `ivy-mode'.")
@@ -117,17 +117,18 @@ Switch to another buffer in another window.
 ;;;***
 
 ;;;### (autoloads nil nil ("c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/ivy-20170410.47/colir.el"
-;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/ivy-20170410.47/ivy-autoloads.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/ivy-20170410.47/ivy-overlay.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/ivy-20170410.47/ivy-pkg.el"
 ;;;;;;  "c:/Users/yulingjie/AppData/Roaming/.emacs.d/elpa/ivy-20170410.47/ivy.el")
-;;;;;;  (22765 62833 0 0))
+;;;;;;  (22767 15681 857000 0))
 
 ;;;***
 
+(provide 'ivy-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; ivy-autoloads.el ends here

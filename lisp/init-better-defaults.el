@@ -1,4 +1,3 @@
-
 (global-linum-mode 1)
 
 (setq make-backup-files nil)
@@ -16,5 +15,5 @@
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
-
+(setq make-backup-files nil)
 (provide 'init-better-defaults)
