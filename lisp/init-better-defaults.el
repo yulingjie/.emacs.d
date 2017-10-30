@@ -27,4 +27,11 @@
 (set-selection-coding-system 'utf-8)
 (modify-coding-system-alist 'process "*" 'utf-8)
 
+
+;; ycmd
+;;(set-variable 'ycmd-server-command
+;;	      '("python" "/home/ylj/.emacs.d/ycmd/ycmd"))
+(set-variable 'ycmd-server-command
+	      `("python", (file-truename "~/.emacs.d/ycmd/ycmd/")))
+(set-variable 'ymc-extra-conf-whitelist '("~/projects/*"))
 (provide 'init-better-defaults)

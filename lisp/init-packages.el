@@ -26,6 +26,10 @@
 		      popwin
 		      recentf
 		      monokai-theme
+		      ycmd
+		      company-ycmd
+		      flycheck-ycmd
+		      neotree
 		      ;;smex
 		      ;; --- Major Mode ---
 		      ;;js2-mode
@@ -68,6 +72,17 @@
 (load-theme 'monokai 1)
 
 (require 'recentf)
+
+(require 'ycmd)
+(add-hook 'after-init-hook #'global-ycmd-mode)
+
+(require 'company-ycmd)
+(company-ycmd-setup)
+
+(require 'flycheck-ycmd)
+(flycheck-ycmd-setup)
+
+(require 'neotree)
 ;; 文件末尾
 (provide 'init-packages)
 
