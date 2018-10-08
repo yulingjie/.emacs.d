@@ -30,6 +30,7 @@
 		      company-ycmd
 		      flycheck-ycmd
 		      neotree
+		      csharp-mode
 		      ;;smex
 		      ;; --- Major Mode ---
 		      ;;js2-mode
@@ -75,6 +76,17 @@
 
 (require 'ycmd)
 (add-hook 'after-init-hook #'global-ycmd-mode)
+;; ycmd
+;;(set-variable 'ycmd-server-command
+;;	      '("python" "/home/ylj/.emacs.d/ycmd/ycmd"))
+(set-variable 'ycmd-server-command
+	      '("D:\\Python27\\python.exe" "E:\\Documents\\.emacs.d\\ycmd\\ycmd"))
+(set-variable 'ycm_global_ycm_extra_conf "E:\\Documents\\.emacs.d\\.ycm_extra_conf.py")
+
+(set-variable 'ycm_server_keep_logfiles 1)
+
+(set-variable 'ycmd-startup-timeout 15)
+;;(set-variable 'ymc-extra-conf-whitelist '("~/projects/*"))
 
 (require 'company-ycmd)
 (company-ycmd-setup)

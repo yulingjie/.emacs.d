@@ -26,12 +26,19 @@
 (set-buffer-file-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
 (modify-coding-system-alist 'process "*" 'utf-8)
+(prefer-coding-system 'utf-8)
+(set-default-coding-systems 'utf-8)
+(set-terminal-coding-system 'utf-8)
 
 
-;; ycmd
-;;(set-variable 'ycmd-server-command
-;;	      '("python" "/home/ylj/.emacs.d/ycmd/ycmd"))
-(set-variable 'ycmd-server-command
-	      `("python", (file-truename "~/.emacs.d/ycmd/ycmd/")))
-(set-variable 'ymc-extra-conf-whitelist '("~/projects/*"))
+
+;; set path
+(setenv "PATH" (concat
+		"%GIT_HOME%\\usr\\bin" ";"
+		(getenv "PATH")
+		)
+	)
+
+
 (provide 'init-better-defaults)
+

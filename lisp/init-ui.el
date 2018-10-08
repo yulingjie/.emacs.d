@@ -1,3 +1,4 @@
+
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
@@ -6,4 +7,6 @@
 (setq-default cursor-type 'bar)
 ;; highlight current number
 
+;; set font
+(set-default-font "Consolas 12")
 (provide 'init-ui)
